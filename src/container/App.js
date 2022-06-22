@@ -1,10 +1,16 @@
-import '../App.css';
+// components 
+import { BrowserRouter } from 'react-router-dom';
+import Router from '../routes';
+// styles 
+
 
 function App() {
   return (
-    <div className="App">
-      Hola mundo
-    </div>
+    <>
+      <BrowserRouter>
+        <Router/>
+      </BrowserRouter>
+    </>
   );
 }
 
