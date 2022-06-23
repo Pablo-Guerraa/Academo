@@ -1,0 +1,37 @@
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.login__section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.login__img {
+  width: 500px;
+  height: 500px;
+}
+.login__section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login__container-form {
+  background: #e2e2e2;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px;
+}
+.social__auth {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

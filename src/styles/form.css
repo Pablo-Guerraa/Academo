@@ -1,0 +1,17 @@
+.form {
+  padding: 10px;
+}
+.form__container-button {
+  display: flex;
+  justify-content: center;
+}
+.form__submit {
+  background: #0062d1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+.form__submit:hover {
+  background-color: #9ec3fb;
+}

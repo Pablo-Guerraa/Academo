@@ -1,0 +1,29 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  width: 300px;
+}
+.input__campo {
+  padding: .5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px;
+}
+.input__color-red {
+  color: red;
+  border-color: red;
+}
+.input__color-black {
+  color: black;
+}
+.input__opacity-100 {
+  opacity: 100;
+}
+.input__opacity-0 {
+  opacity: 0;
+}
+.input__error {
+  transition: 1s;
+  color: red;
+}
