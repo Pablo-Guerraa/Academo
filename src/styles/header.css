@@ -1,0 +1,23 @@
+.header {
+  width: calc(100% - 72px);
+  height: 70px;
+  background-color: #e2e2e2;
+  box-shadow: 0px 1px 7px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 36px;
+  position: fixed;
+}
+.header h1 {
+  color: rgb(0, 0, 153);
+}
+.header__nav {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+} 
+.header__nav__item {
+  text-decoration: none;
+  font-size: 1.2em;
+}
