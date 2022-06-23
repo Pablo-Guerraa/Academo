@@ -6,6 +6,8 @@ import { signInWithPopup } from 'firebase/auth';
 // redux 
 import { useDispatch } from 'react-redux';
 import { loginUser } from '../redux/actions/authAction';
+// styles 
+import '../styles/authSocial.css';
 
 export default function AuthSocial() {
 
@@ -50,11 +52,11 @@ export default function AuthSocial() {
 
   return (
     <div className='social'>
-        <button className='social__auth' onClick={googleLogin}>
+        <button className='social__auth social__auth-google' onClick={googleLogin}>
           Login con Google
         </button>
 
-        <button className='social__auth' onClick={facebookLogin}>
+        <button className='social__auth social__auth-facebook' onClick={facebookLogin}>
           Login con Facebook          
         </button>
     </div>

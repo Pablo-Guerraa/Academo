@@ -1,0 +1,19 @@
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.social__auth {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: antiquewhite;
+}
+.social__auth-google {
+  background: red;
+}
+.social__auth-facebook {
+  background: blue;
+}

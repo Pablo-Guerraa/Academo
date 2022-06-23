@@ -6,11 +6,12 @@
   justify-content: center;
 }
 .form__submit {
-  background: #0062d1;
+  background: #ffa726;
   border: none;
   border-radius: 5px;
   padding: 10px 40px;
   cursor: pointer;
+  color: antiquewhite;
 }
 .form__submit:hover {
   background-color: #9ec3fb;
