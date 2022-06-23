@@ -1,0 +1,37 @@
+.home {
+  /* padding: 100px 0; */
+}
+.home_container-video {
+  padding: 100px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  margin-bottom: 70px;
+}
+.home__title {
+  margin: 0 0 15px 50px;
+}
+.home__video {
+  border-radius: 30px;
+}
+.home__video .ytp-cued-thumbnail-overlay-image {
+  background-image: url('https://res.cloudinary.com/dxhgejzwc/image/upload/v1655932700/mobile-login-concept-illustration_114360-83_imlfed.webp') !important;
+}
+.home__container-cards {
+  width: 90%;
+  background-color: #e2e2e2;
+  margin: 0 auto 50px auto;
+  padding: 24px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.home__video {
+  margin: auto;
+}
+@media (max-width: 700px) {
+  .home__container-cards {
+  grid-template-columns: 1fr;
+  }
+}
