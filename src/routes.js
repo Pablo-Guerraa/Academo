@@ -6,16 +6,20 @@ import LogoOnlyLayout from './layouts/LogoOnlyLayout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NotFound from './pages/NotFound';
+// redux 
+import { useSelector } from 'react-redux';
 
 
 // ----------------------------------------------------------------------
 
 export default function Router() {
+  const isLoggedIn = useSelector((state)=>state.auth.isLoggedIn);
+  
   return useRoutes([
     {
       path: '/app',
       // El true da el acceso a las rutas privadas 
-      element: true ? <HomeLayout /> : <Navigate to="/login" />,
+      element: isLoggedIn ? <HomeLayout /> : <Navigate to="/login" />,
       children: [
         { path: 'home', element: <Home /> },
       ],

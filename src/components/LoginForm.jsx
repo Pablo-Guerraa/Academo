@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
-import InputForm from './Input';
-import '../styles/form.css'
+import { useNavigate } from 'react-router-dom';
+// firebase 
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebase';
+// redux 
 import { useDispatch } from 'react-redux';
 import { loginUser } from '../redux/actions/authAction';
+// components 
+import InputForm from './Input';
+// styles 
+import '../styles/form.css'
 
 const expresiones = {
   password: /^.{4,12}$/, // 4 a 12 digitos.
@@ -15,8 +20,11 @@ export default function LoginForm() {
 
   const dispatch = useDispatch();
 
+  const navigate = useNavigate()
   const [ email, setEmail ] = useState({ campo: "", error: false });
   const [ password, setPassword ] = useState({ campo: "", error: false });
+
+
 
   const login = async(e) => {
     e.preventDefault();
@@ -29,7 +37,9 @@ export default function LoginForm() {
           isLoggedIn: true,
           checking: false,
       }
-      dispatch(loginUser(objUser))
+      dispatch(loginUser(objUser));
+      navigate('/app')
+
     } catch (error) {
       alert('Email o contraseña invalido, intruduce uno valido');
     }
