@@ -18,20 +18,20 @@
   justify-content: center;
   align-items: center;
 }
-.social {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 .login__container-form {
   background: #e2e2e2;
   padding: 40px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px;
 }
-.social__auth {
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+@media (max-width: 700px) {
+  .login {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .login__img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+  }
 }
