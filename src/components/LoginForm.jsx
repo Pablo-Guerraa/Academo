@@ -38,7 +38,7 @@ export default function LoginForm() {
           checking: false,
       }
       dispatch(loginUser(objUser));
-      navigate('/app')
+      navigate('/app/home')
 
     } catch (error) {
       alert('Email o contraseña invalido, intruduce uno valido');

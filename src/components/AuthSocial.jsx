@@ -26,7 +26,7 @@ export default function AuthSocial() {
         checking: false,
       };
       dispatch(loginUser(objUser));
-      navigate('/app')
+      navigate('/app/home')
     } catch (error) {
       alert('no pudiste ingresar con Google, intenta acceder con correo y contraseña o con Facebook')
     };
@@ -44,7 +44,7 @@ export default function AuthSocial() {
         checking: false,
       };
       dispatch(loginUser(objUser));
-      navigate('/app')
+      navigate('/app/home')
     } catch (error) {
       alert('no pudiste ingresar con Facebook, intenta acceder con correo y contraseña o con Google')
     };
