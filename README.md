@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Academo 
+Academo es una pagina web en el que puedes ver una variedad de trailes de las mejores peliculas y series. 
+## Adaptable a
+dispositivos moviles.
+dispositivos de escritorio.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descarga con HTTP 
+Al hacer 'git clone  +  ruta http' en la terminal del computador tendras descargado el proyecto en tu dispositivo local.
 
-## Available Scripts
+## Istalaciones  
+Al descargar el proyecto usa yarn o npm para instalar las siguientes dependencias. 
 
-In the project directory, you can run:
+Ejemplo: npm install o con la abreviatura npm i.
 
-### `npm start`
+## Tecnologias usadas
+1. React js: https://es.reactjs.org/
+2. axios: https://axios-http.com/
+3. react-router-dom: https://reactrouter.com/
+4. redux: https://es.redux.js.org/
+5. react-redux: https://react-redux.js.org/
+6. redux-thunk: https://github.com/reduxjs/redux-thunk
+7. firebase: https://firebase.google.com/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Metodologia css utilizada 
+Se usó la metodologia BEM para el manejo de estilos CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Uso de la pagina web
+Al ingresar encontraras el inicio de sesión donde puedes ingresar con el siguiente correo y contraseña:
 
-### `npm test`
+- Correo: login@gmail.com
+- Contraseña: login123
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Tambien puedes ingresar con cualquiera de los proveedores a continuación:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Google
+- Facebook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Cuando inicies sesion correctamente lo primero que verás será una pagina en blanco con un header. En el header encontraras una barra de navegación con home y logout
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Logout para cerrar la sesión 
+- home te redireccionará a la pagina de home
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Home
+En home encontrará una pantalla de video y mas abajo las tarjetas con la imagen en cada una de las tarjetas. Al darle click en el botón de cada tarjeta la pantalla de video irá cambiando con su respectivo trailer.
