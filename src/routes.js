@@ -35,18 +35,18 @@ export default function Router() {
       };
       dispatch(loginUser(objUser));
       navigate('/app/home');
-    })
-  }
+    });
+  };
   
   useEffect(() => {
     userState();
-  }, [])
+  }, []);
 
   return useRoutes([
     {
       path: '/app',
       // El true da el acceso a las rutas privadas 
-      element: isLoggedIn ? <HomeLayout /> : <Navigate to="/login" />,
+      element: isLoggedIn ? <HomeLayout /> : <Navigate to='/login' />,
       children: [
         { path: 'home', element: <Home /> },
       ],
@@ -55,18 +55,18 @@ export default function Router() {
       path: '/',
       element: <LogoOnlyLayout />,
       children: [
-        { path: '/', element: <Navigate to="/login" /> },
+        { path: '/', element: <Navigate to='/login' /> },
         { path: 'login', element: <Login /> },
         // { path: 'register', element: <Register /> },
         { path: '404', element: <NotFound /> },
-        { path: '*', element: <Navigate to="/404" /> },
+        { path: '*', element: <Navigate to='/404' /> },
       ],
     },
     { 
       path: '*', 
       element: <Navigate 
-      to="/404" 
+      to='/404' 
       replace />
     },
   ]);
-}
+};

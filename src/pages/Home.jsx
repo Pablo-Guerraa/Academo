@@ -26,11 +26,11 @@ export default function Home() {
     <div className='home'>
       <section className='home_container-video'>
         <iframe 
-          width="560" 
-          height="315" 
+          width='560' 
+          height='315' 
           src={`https://www.youtube.com/embed/${videoId}`} 
-          title="video" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          title='video' 
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' 
           className='home__video'
         >
             {/* Esta etiquta no tiene texto  */}

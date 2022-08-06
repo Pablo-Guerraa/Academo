@@ -1,15 +1,18 @@
-import React from "react";
 import '../styles/input.css';
 
-export default function Input({
-  name,
-  label,
-  type,
-  state,
-  setState,
-  expresion,
-  error,
-}) {
+export default function Input(props) {
+
+  const {
+    name,
+    label,
+    type,
+    state,
+    setState,
+    expresion,
+    error,
+    placeholder
+  } = props;
+
   const handleChange = ({ target }) => {
     setState({
       ...state,
@@ -27,10 +30,10 @@ export default function Input({
     }
   };
   return (
-    <div className="input">
+    <div className='input'>
       <label
         htmlFor={name}
-        className={` ${state.error ? "input__color-red" : "input__color-black"}`}
+        className={` ${state.error ? 'input__color-red' : 'input__color-black'}`}
       >
         <strong>{label}</strong>
       </label>
@@ -40,16 +43,17 @@ export default function Input({
         name={name}
         defaultValue={state.campo}
         className={`input__campo ${
-          state.error ? "input__color-red" : "input__color-black"
+          state.error ? 'input__color-red' : 'input__color-black'
         }`}
         onChange={handleChange}
         onBlur={() => validation()}
+        placeholder={placeholder}
         required
       />
 
       <span
         className={`${
-          state.error ? "input__opacity-100" : "input__opacity-0"
+          state.error ? 'input__opacity-100' : 'input__opacity-0'
         } input__error`}
       >
         {error}

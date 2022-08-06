@@ -9,7 +9,7 @@ import { loginUser } from '../redux/actions/authAction';
 // components 
 import InputForm from './Input';
 // styles 
-import '../styles/form.css'
+import '../styles/form.css';
 
 const expresiones = {
   password: /^.{4,12}$/, // 4 a 12 digitos.
@@ -20,9 +20,9 @@ export default function LoginForm() {
 
   const dispatch = useDispatch();
 
-  const navigate = useNavigate()
-  const [ email, setEmail ] = useState({ campo: "", error: false });
-  const [ password, setPassword ] = useState({ campo: "", error: false });
+  const navigate = useNavigate();
+  const [ email, setEmail ] = useState({ campo: '', error: false });
+  const [ password, setPassword ] = useState({ campo: '', error: false });
 
 
 
@@ -38,7 +38,7 @@ export default function LoginForm() {
           checking: false,
       }
       dispatch(loginUser(objUser));
-      navigate('/app/')
+      navigate('/app/');
 
     } catch (error) {
       alert('Email o contraseña invalido, intruduce uno valido');
@@ -48,22 +48,24 @@ export default function LoginForm() {
   return (
     <form className='form' onSubmit={login}>
       <InputForm
-        type="email"
-        name="email"
-        label="Correo Electrónico :"
+        type='email'
+        name='email'
+        label='Correo Electrónico :'
         state={email}
         setState={setEmail}
         expresion={expresiones.email}
-        error="El email es obligatorio y tiene que ser un email valido"
+        error='El email es obligatorio y tiene que ser un email valido'
+        placeholder='login@gmail.com'
       />
       <InputForm
-        type="password"
-        name="password"
-        label="Constraseña :"
+        type='password'
+        name='password'
+        label='Constraseña :'
         state={password}
         setState={setPassword}
         expresion={expresiones.password}
-        error="La contraseña debe tener por lo menos 4 digitos"
+        error='La contraseña debe tener por lo menos 4 digitos'
+        placeholder='login123'
       />
       <div className='form__container-button'>
         <button type='submit' className='form__submit'>

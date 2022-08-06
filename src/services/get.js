@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 const get = async(url) => {
   const respond = await axios.get(url);

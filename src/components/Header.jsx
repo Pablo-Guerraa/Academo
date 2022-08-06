@@ -25,7 +25,7 @@ export default function Header() {
         <NavLink 
         to='/app/home' 
         className='header__nav__item'
-        style={({ isActive }) => isActive ? {color: 'blue', fontWeight: "bold"} : {color:'blue'}}
+        style={({ isActive }) => isActive ? {color: 'blue', fontWeight: 'bold'} : {color:'blue'}}
         >
           home 
         </NavLink>
