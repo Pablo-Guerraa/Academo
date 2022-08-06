@@ -1,7 +1,7 @@
 # Academo 
 Academo es una pagina web en el que puedes ver una variedad de trailes de las mejores peliculas y series. 
 
-URL del despliegue proyecto: https://academo.vercel.app/login
+URL del despliegue proyecto: https://academo.vercel.app/
 
 
 ## Adaptable a
