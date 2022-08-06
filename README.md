@@ -1,8 +1,12 @@
 # Academo 
 Academo es una pagina web en el que puedes ver una variedad de trailes de las mejores peliculas y series. 
+
+URL del despliegue proyecto: https://academo.vercel.app/login
+
+
 ## Adaptable a
-dispositivos moviles.
-dispositivos de escritorio.
+- Dispositivos moviles.
+- Dispositivos de escritorio.
 
 ## Descarga con HTTP 
 Al hacer 'git clone  +  ruta http' en la terminal del computador tendras descargado el proyecto en tu dispositivo local.
@@ -10,16 +14,16 @@ Al hacer 'git clone  +  ruta http' en la terminal del computador tendras descarg
 ## Istalaciones  
 Al descargar el proyecto usa yarn o npm para instalar las siguientes dependencias. 
 
-Ejemplo: npm install o con la abreviatura npm i.
-
-## Tecnologias usadas
-1. React js: https://es.reactjs.org/
-2. axios: https://axios-http.com/
-3. react-router-dom: https://reactrouter.com/
-4. redux: https://es.redux.js.org/
+## Tecnologias usadas    -->   Uso en la app de Academo 
+1. React js: https://es.reactjs.org/   -->   Como libreria de javascript
+2. axios: https://axios-http.com/   -->   Para peticiones asyncronas
+3. react-router-dom: https://reactrouter.com/  -->  para manejo de rutas y protección de rutas 
+4. redux: https://es.redux.js.org/   -->   para manejar un estado global
 5. react-redux: https://react-redux.js.org/
 6. redux-thunk: https://github.com/reduxjs/redux-thunk
-7. firebase: https://firebase.google.com/
+7. firebase: https://firebase.google.com/   -->   para el inicio de sesión 
+
+Ejemplo: npm install axios o con la abreviatura npm i axios. En caso de que desee instalar todas las dependencias usa npm install
 
 ## Metodologia css utilizada 
 Se usó la metodologia BEM para el manejo de estilos CSS.
@@ -44,3 +48,5 @@ Cuando inicies sesion correctamente lo primero que verás será una pagina en bl
 
 #### Home
 En home encontrará una pantalla de video y mas abajo las tarjetas con la imagen en cada una de las tarjetas. Al darle click en el botón de cada tarjeta la pantalla de video irá cambiando con su respectivo trailer.
+
+### Nota: Este proyecto está manejado con gitHub proyects para el manejo de tareas. En proyects se puede evidenciar el paso a paso de la reaclización de éste proyecto.  
