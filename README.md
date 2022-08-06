@@ -46,3 +46,5 @@ Cuando inicies sesion correctamente lo primero que verás será una pagina en bl
 
 #### Home
 En home encontrará una pantalla de video y mas abajo las tarjetas con la imagen en cada una de las tarjetas. Al darle click en el botón de cada tarjeta la pantalla de video irá cambiando con su respectivo trailer.
+
+### Nota: Este proyecto está manejado con gitHub proyects para el manejo de tareas. En proyects se puede evidenciar el paso a paso de la reaclización de éste proyecto.  
