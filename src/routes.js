@@ -34,7 +34,7 @@ export default function Router() {
         checking: false,
       };
       dispatch(loginUser(objUser));
-      navigate('/app');
+      navigate('/app/home');
     })
   }
   

@@ -12,6 +12,10 @@ export default function Card({ movie, setVideoId }) {
       const respond = await get(idUrl + id);
       const data = respond.videoId;
       setVideoId(data);
+      window.scroll({
+        top: 0,
+        behavior: 'smooth'
+      });
     } catch (error) {
       console.log('Fallo en el idApi');
     }
