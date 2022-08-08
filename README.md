@@ -34,6 +34,7 @@ Al ingresar encontraras el inicio de sesión donde puedes ingresar con el siguie
 - Correo: login@gmail.com
 - Contraseña: login123
 
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/82006676/183321745-a55e7c34-4e26-49d8-8dab-afdb27b00950.png">
 
 Tambien puedes ingresar con cualquiera de los proveedores a continuación:
 
@@ -43,10 +44,12 @@ Tambien puedes ingresar con cualquiera de los proveedores a continuación:
 Cuando inicies sesion correctamente lo primero que verás será una pagina en blanco con un header. En el header encontraras una barra de navegación con home y logout
 
 - Logout para cerrar la sesión 
-- home te redireccionará a la pagina de home
-
+- home te redireccionará a la pagina donde está el contenido de la pagina (videoTrailer y lista de trailer)
 
 #### Home
 En home encontrará una pantalla de video y mas abajo las tarjetas con la imagen en cada una de las tarjetas. Al darle click en el botón de cada tarjeta la pantalla de video irá cambiando con su respectivo trailer.
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/82006676/183321843-0af31213-0f07-48df-bdb9-4915c213878d.png">
+<img width="946" alt="image" src="https://user-images.githubusercontent.com/82006676/183322076-fd13dee3-a8b0-43d6-b5ec-5d11f39ea9c4.png">
 
 ### Nota: Este proyecto está manejado con gitHub proyects para el manejo de tareas. En proyects se puede evidenciar el paso a paso de la reaclización de éste proyecto.  
