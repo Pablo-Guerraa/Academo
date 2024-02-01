@@ -8,7 +8,7 @@ export default function Login() {
     <div className='login'>
       <section className='login__section-one'>
         <h1>Hola, bienvenido a Academo</h1>
-        <img src='https://res.cloudinary.com/dxhgejzwc/image/upload/v1655932700/mobile-login-concept-illustration_114360-83_imlfed.webp' alt='logo' className='login__img' />
+        <img src='https://res.cloudinary.com/dxhgejzwc/image/upload/v1706825072/Academo/gratis-png-usuario-de-inicio-de-sesion-iconos-de-la-computadora-forma-contrasena-removebg-preview_dmucv6.png' alt='logo' className='login__img' />
       </section>
       <section className='login__section-two'>
         <div className='login__container-form'>

@@ -12,8 +12,20 @@
   color: antiquewhite;
 }
 .social__auth-google {
-  background: red;
+  background: rgb(255, 75, 75);
+}
+.social__auth-google:hover {
+  background-color: red;
+}
+.social__auth-google:focus {
+  transform: scale(1.1);
 }
 .social__auth-facebook {
-  background: blue;
+  background: rgb(112, 112, 255);
+}
+.social__auth-facebook:hover {
+  background-color: blue;
+}
+.social__auth-facebook:focus {
+  transform: scale(1.1);
 }
